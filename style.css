@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  background-color: #fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px ghostwhite;
+  color: darkblue;
+  height: 500px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+h1 > img {
+  height: 30px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.task-adder {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 0 15px red;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  height: 80%;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.tasks .task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.tt {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.cb {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.task.checked{
+
+  text-decoration: line-through;
+  
+}
